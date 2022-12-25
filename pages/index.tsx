@@ -4,6 +4,9 @@ import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai
 import Image from "next/legacy/image";
 import princess from "../public/princess.png";
 import dust from "../public/dust.png";
+import ponyo from "../public/ponyo.png";
+import jiji from "../public/jiji.png";
+import app from "../public/app.png";
 
 export default function Home() {
   return (
@@ -14,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>Gia-Huy's Portfolio</h1>
@@ -25,9 +28,9 @@ export default function Home() {
           </nav>
 
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Giahuy Gonzalez</h2>
-            <h3 className='text-2xl py-2'>Software Engineer</h3>
-            <p className='text-md py-5 leading-8'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Giahuy Gonzalez</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Software Engineer</h3>
+            <p className='text-md py-5 leading-8 md:text-xl max-w-lg mx-auto'>
               Freshly Grad looking to expand my knowledge in computer science. 
               Connect with me on LinkedIn or send me an email! 
             </p>
@@ -39,7 +42,7 @@ export default function Home() {
             <AiFillYoutube/>
           </div>
 
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={princess} alt="" layout="fill" objectFit='cover'/>
           </div>
         </section>
@@ -59,9 +62,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={dust} width={150} height={150}/>
+          <div className='lg:flex gap-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
+              <Image src={dust} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Google's Computer Science Summer Institute</h3>
               <p className='py-2'>
                 4 week program learning Computer Science from Google Engineers.
@@ -75,38 +78,55 @@ export default function Home() {
               <p className='text-gray-800 py-1'>APIs</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={dust} width={150} height={150}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Google's Computer Science Summer Institute</h3>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
+              <Image src={ponyo} width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Google's Software Product Sprint </h3>
               <p className='py-2'>
-                4 week program learning Computer Science from Google Engineers.
+                4 month program learning from Google Engineers!
               </p>
               <h4 className='py-4 text-teal-600'>Skills Learned</h4>
               <p className='text-gray-800 py-1'>HTML</p>
               <p className='text-gray-800 py-1'>CSS</p>
-              <p className='text-gray-800 py-1'>Python</p>
+              <p className='text-gray-800 py-1'>Java</p>
               <p className='text-gray-800 py-1'>JavaScript</p>
-              <p className='text-gray-800 py-1'>Unix</p>
               <p className='text-gray-800 py-1'>APIs</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={dust} width={150} height={150}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Google's Computer Science Summer Institute</h3>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
+              <Image src={jiji} width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Bob Ziroll</h3>
               <p className='py-2'>
-                4 week program learning Computer Science from Google Engineers.
+                11 hour course on scrimba learning react!
               </p>
               <h4 className='py-4 text-teal-600'>Skills Learned</h4>
-              <p className='text-gray-800 py-1'>HTML</p>
-              <p className='text-gray-800 py-1'>CSS</p>
-              <p className='text-gray-800 py-1'>Python</p>
-              <p className='text-gray-800 py-1'>JavaScript</p>
-              <p className='text-gray-800 py-1'>Unix</p>
-              <p className='text-gray-800 py-1'>APIs</p>
+              <p className='text-gray-800 py-1'>JSX</p>
+              <p className='text-gray-800 py-1'>Props</p>
+              <p className='text-gray-800 py-1'>UseState</p>
+              <p className='text-gray-800 py-1'>Conditional Rendering</p>
+              <p className='text-gray-800 py-1'>Forms input</p>
+              <p className='text-gray-800 py-1'>UseEffect</p>
+              <p className='text-gray-800 py-1'>API Calls</p>
+              <p className='text-gray-800 py-1'>Mapping components</p>
+              <p className='text-gray-800 py-1'>Many more!</p>
             </div>
             
           </div>
 
+        </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-4'>Portfolio</h3>
+
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I have had many projects from school, personal life and outside courses! 
+              here are a few that I have worked on!
+            </p>
+          </div>
+
+          <div>
+            <div><Image src={app}/></div>
+          </div>
         </section>
       </main>
     </div>
