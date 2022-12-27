@@ -7,9 +7,7 @@ import dust from "../public/dust.png";
 import ponyo from "../public/ponyo.png";
 import jiji from "../public/jiji.png";
 import app from "../public/app.png";
-import travel from "../public/travel.PNG";
 import airbnb from "../public/airbnb.png";
-import meme from "../public/meme.PNG";
 import {useState} from 'react';
 
 
@@ -134,9 +132,9 @@ export default function Home() {
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={travel} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+           
             <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={meme} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            
           </div>
         </section>
       </main>
