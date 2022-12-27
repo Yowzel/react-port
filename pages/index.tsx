@@ -9,7 +9,7 @@ import jiji from "../public/jiji.png";
 import app from "../public/app.png";
 import airbnb from "../public/airbnb.png";
 import travelnew from "../public/travelnew.png";
-import meme from "../public/meme1.png";
+import meme1 from "../public/meme1.png";
 import {useState} from 'react';
 
 
@@ -136,7 +136,7 @@ export default function Home() {
             <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
             <div className='basis-1/3 flex-1'><Image src={travelnew} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
             <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={meme} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            <div className='basis-1/3 flex-1'><Image src={meme1} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
           </div>
         </section>
       </main>
