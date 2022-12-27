@@ -9,6 +9,7 @@ import jiji from "../public/jiji.png";
 import app from "../public/app.png";
 import airbnb from "../public/airbnb.png";
 import travelnew from "../public/travelnew.png";
+import meme from "../public/meme.png";
 import {useState} from 'react';
 
 
@@ -58,7 +59,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-4  dark:text-gray-100'>My Experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800  dark:text-gray-100'>
-              I began to my computer science journey was I was only 12 years old! 
+              I began my computer science journey was I was only 12 years old! 
               I was also interested in coding, and I started my own minecraft server developing new code with the magic plugin.
               After I joined<span className='text-teal-500'> Google's Computer Science Summer Institute</span> after graduating High School. Then joining <span className='text-teal-500'>Google's Software Product Sprint </span>
               sophomore year of college.
@@ -135,7 +136,7 @@ export default function Home() {
             <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
             <div className='basis-1/3 flex-1'><Image src={travelnew} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
             <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            
+            <div className='basis-1/3 flex-1'><Image src={meme} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
           </div>
         </section>
       </main>
