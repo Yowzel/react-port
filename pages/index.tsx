@@ -9,7 +9,7 @@ import jiji from "../public/jiji.png";
 import app from "../public/app.png";
 import airbnb from "../public/airbnb.png";
 import travelnew from "../public/travelnew.png";
-import meme from "../public/meme.png";
+import meme from "../public/meme1.png";
 import {useState} from 'react';
 
 
