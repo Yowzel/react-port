@@ -39,7 +39,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Giahuy Gonzalez</h2>
             <h3 className='text-2xl py-2 md:text-3xl  dark:text-gray-100'>Software Engineer</h3>
             <p className='text-md py-5 leading-8 md:text-xl max-w-lg mx-auto  dark:text-gray-100'>
-              Freshly Grad looking to expand my knowledge in computer science. 
+              New Grad looking to expand their knowledge in computer science. 
               Connect with me on LinkedIn or send me an email! 
             </p>
           </div>
@@ -60,8 +60,8 @@ export default function Home() {
             <h3 className='text-3xl py-4  dark:text-gray-100'>My Experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800  dark:text-gray-100'>
               I began my computer science journey was I was only 12 years old! 
-              I was also interested in coding, and I started my own minecraft server developing new code with the magic plugin.
-              After I joined<span className='text-teal-500'> Google's Computer Science Summer Institute</span> after graduating High School. Then joining <span className='text-teal-500'>Google's Software Product Sprint </span>
+              I was interested in coding and I started my own minecraft server developing new code with the magic plugin.
+              I joined<span className='text-teal-500'> Google's Computer Science Summer Institute</span> after graduating High School, then joining <span className='text-teal-500'>Google's Software Product Sprint </span>
               sophomore year of college.
             </p>
 
@@ -128,15 +128,15 @@ export default function Home() {
 
             <p className='text-md py-2 leading-8 text-gray-800  dark:text-gray-100'>
               I have had many projects from school, personal life and outside courses! 
-              here are a few that I have worked on!
+              Here are a few that I have worked on!
             </p>
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={travelnew} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={meme1} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            <a href="https://github.com/ryan-buckholz/ERIS"><div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
+           <a href='https://github.com/Yowzel/travel-journal'> <div className='basis-1/3 flex-1'><Image src={travelnew} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
+            <a href='https://github.com/Yowzel/airbnb-app'><div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
+            <a href='https://github.com/Yowzel/meme-gen'><div className='basis-1/3 flex-1'><Image src={meme1} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
           </div>
         </section>
       </main>
