@@ -10,7 +10,6 @@ import app from "../public/app.png";
 import travel from "../public/travel.png";
 import airbnb from "../public/airbnb.png";
 import meme from "../public/meme.png";
-import resume from  "../public/resume.pdf";
 import {useState} from 'react';
 
 
@@ -32,7 +31,7 @@ export default function Home() {
             <h1 className='text-xl font-burtons  dark:text-gray-100'>Gia-Huy's Portfolio</h1>
             <ul className="flex items-center"> 
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl  dark:text-gray-100"/></li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={resume} target="_blank">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="" target="_blank">Resume</a></li>
             </ul>
           </nav>
 
@@ -134,10 +133,10 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={travel} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/></div>
-            <div className='basis-1/3 flex-1'><Image src={meme} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/></div>
+            <div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            <div className='basis-1/3 flex-1'><Image src={travel} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            <div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
+            <div className='basis-1/3 flex-1'><Image src={meme} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div>
           </div>
         </section>
       </main>
