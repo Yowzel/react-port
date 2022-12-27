@@ -7,9 +7,9 @@ import dust from "../public/dust.png";
 import ponyo from "../public/ponyo.png";
 import jiji from "../public/jiji.png";
 import app from "../public/app.png";
-import travel from "../public/travel.png";
+import travel from "../public/travel.PNG";
 import airbnb from "../public/airbnb.png";
-import meme from "../public/meme.png";
+import meme from "../public/meme.PNG";
 import {useState} from 'react';
 
 
