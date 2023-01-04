@@ -11,6 +11,7 @@ import airbnb from "../public/airbnb.png";
 import travelnew from "../public/travelnew.png";
 import meme1 from "../public/meme1.png";
 import {useState} from 'react';
+import cmyky from "../public/colorbymky.png";
 
 
 export default function Home() {
@@ -133,10 +134,11 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <a href="https://github.com/ryan-buckholz/ERIS"><div className='basis-1/3 flex-1'><Image src={app} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
-           <a href='https://github.com/Yowzel/travel-journal'> <div className='basis-1/3 flex-1'><Image src={travelnew} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
-            <a href='https://github.com/Yowzel/airbnb-app'><div className='basis-1/3 flex-1'><Image src={airbnb} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
-            <a href='https://github.com/Yowzel/meme-gen'><div className='basis-1/3 flex-1'><Image src={meme1} className='rounded-lg object-cover' width={100} height={100} layout='responsive'/></div></a>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/ryan-buckholz/ERIS' target='_blank'  rel="noreferrer"><Image src={app} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/travel-journal' target='_blank'  rel="noreferrer"><Image src={travelnew} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/airbnb-app' target='_blank'  rel="noreferrer"><Image src={airbnb} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/meme-gen' target='_blank'  rel="noreferrer"><Image src={meme1} className='rounded-lg object-cover' style={{width:'100' , height:'100'}}layout='responsive'/></a></div>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/meme-gen' target='_blank'  rel="noreferrer"><Image src={cmyky} className='rounded-lg object-cover' style={{width:'100' , height:'100'}}layout='responsive'/></a></div>
           </div>
         </section>
       </main>
