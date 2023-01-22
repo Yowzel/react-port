@@ -2,7 +2,6 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import Image from "next/legacy/image";
-import princess from "../public/princess.png";
 import dust from "../public/dust.png";
 import ponyo from "../public/ponyo.png";
 import jiji from "../public/jiji.png";
@@ -12,7 +11,8 @@ import travelnew from "../public/travelnew.png";
 import meme1 from "../public/meme1.png";
 import {useState} from 'react';
 import cmyky from "../public/colorbymky.png";
-
+import pfp from "../public/pfp.jpg";
+import blog from "../public/blogapp.png"
 
 export default function Home() {
 
@@ -51,9 +51,11 @@ export default function Home() {
             <a href='https://www.youtube.com/@giahuygonzalez6499/featured' target="_blank" rel="noopener noreferrer"><AiFillYoutube/></a>
           </div>
 
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={princess} alt="" layout="fill" objectFit='cover'/>
+          <div className='flex justify-center items-center my-10'>
+            <Image src={pfp} alt="" width={350} height={455} quality={100}/>
           </div>
+          
+
         </section>
         
         <section>
@@ -135,7 +137,7 @@ export default function Home() {
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'><a href='https://github.com/ryan-buckholz/ERIS' target='_blank'  rel="noreferrer"><Image src={app} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
-            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/travel-journal' target='_blank'  rel="noreferrer"><Image src={travelnew} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
+            <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/blog-app' target='_blank'  rel="noreferrer"><Image src={blog} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
             <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/airbnb-app' target='_blank'  rel="noreferrer"><Image src={airbnb} className='rounded-lg object-cover' style={{width:'100' , height:'100'}} layout='responsive'/></a></div>
             <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/meme-gen' target='_blank'  rel="noreferrer"><Image src={meme1} className='rounded-lg object-cover' style={{width:'100' , height:'100'}}layout='responsive'/></a></div>
             <div className='basis-1/3 flex-1'><a href='https://github.com/Yowzel/meme-gen' target='_blank'  rel="noreferrer"><Image src={cmyky} className='rounded-lg object-cover' style={{width:'100' , height:'100'}}layout='responsive'/></a></div>
