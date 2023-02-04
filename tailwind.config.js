@@ -10,6 +10,12 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      colors: {
+        'darkbg': '#2E446F',
+        'lightfont' : '#DFE0C4',
+        'complimentfont': '#71909F',
+        'accentfont' : '#7E9940'
+      },
     },
   },
   plugins: [],
