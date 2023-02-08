@@ -12,7 +12,6 @@ import cmyky from "../public/colorbymky.png";
 import blog from "../public/blogapp.png"
 import profile from '../public/profile.jpg';
 import smole from "../public/smole.png"
-import resume from "../public/resumee.pdf"
 
 export default function Home() {
 
