@@ -12,6 +12,7 @@ import cmyky from "../public/colorbymky.png";
 import blog from "../public/blogapp.png"
 import profile from '../public/profile.jpg';
 import smole from "../public/smole.png"
+import resume from "../public/resumee.pdf"
 
 export default function Home() {
 
@@ -30,11 +31,11 @@ export default function Home() {
           <nav className='py-10 mb-12 flex justify-center'>
 
 
-            <h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>About</h1>
-            <h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>WIP</h1>
-            <h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Resume</h1>
-            <h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Experiences</h1>
-            <h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Projects</h1>
+            <a href='#about'><h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>About</h1></a>
+            <a href='#WIP'><h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>WIP</h1></a>
+            <a href='https://drive.google.com/file/d/1FZD0xCG4CGgsE4mIHDL3jizSxNHS4xdm/view?usp=sharing'><h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Resume</h1></a>
+            <a href='#experience'><h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Experiences</h1></a>
+            <a href='#projects'><h1 className='text-lightfont text-xl font-burtons  dark:text-gray-100 px-3'>Projects</h1></a>
 
     
             {
@@ -84,7 +85,7 @@ export default function Home() {
 
         <section className='flex items-center my-10 flex-wrap'>
 
-          <div className='flex-1 basis-1/2'>
+          <div className='flex-1 basis-1/2' id='about'>
             <h3 className='font-burtons text-complimentfont text-3xl py-4 dark:text-gray-100'>About me</h3>
             <p className='font-burtons text-lightfont text-md py-2 leading-8'>
               Hi, my name is Gia-Huy Nguyen Gonzalez. I started to become interested in computer science when I was 
@@ -134,7 +135,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='lg:flex gap-10 font-burtons text-lightfont text-md py-1 leading-8'>
+          <div className='lg:flex gap-10 font-burtons text-lightfont text-md py-1 leading-8' id='experience'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-accentfont dark:bg-gray-100 '>
               <Image src={dust} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2 font-burtons text-darkbg '>Google's Computer Science Summer Institute</h3>
@@ -228,7 +229,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className='my-20'>
+          <div className='my-20' id='WIP'>
             <h3 className='font-burtons text-3xl py-2 text-complimentfont font-medium md:text-3xl'>Work in progress</h3>
             <div className='flex items-center justify-center gap-20 flex-wrap'>
               <div className=''><a href='' target='_blank'  rel="noreferrer"><Image src={smole} className='rounded-lg object-cover' width='500' height='500'/></a></div>
@@ -268,7 +269,7 @@ export default function Home() {
 
           
 
-          <div className='flex items-center justify-center gap-20 flex-wrap'>
+          <div className='flex items-center justify-center gap-20 flex-wrap' id='projects'>
             <div className=''><a href='https://github.com/ryan-buckholz/ERIS' target='_blank'  rel="noreferrer"><Image src={app} className='rounded-lg object-cover' width='500' height='500'/></a></div>
             <p className='flex-1 font-burtons text-lightfont text-md py-2 leading-8'>design and develop a cutting-edge mobile reporting app for CalTrans' geotech engineers. 
             I was responsible for creating an intuitive user interface and incorporating key features such as geolocation
